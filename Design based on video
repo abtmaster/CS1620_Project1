@@ -1,0 +1,32 @@
+Input Voter ID - check if already exists
+in the file
+
+Select Candidate Radio Buttons - John or Jane
+
+Submit Button - writes vote to CSV file, checks for
+duplicates in the file based on Voter ID
+
+Message to User:
+Green success - "Vote submitted"
+Red - error "Cannot vote multiple times"
+
+Votes are saved in file votes.csv in CSV format
+like here:
+voter_id,candidate
+1234,John
+5678,Jane
+
+Used Qt Designer to design the screen
+and converted using pyuic6 to voting_view.py
+
+voting_model.py - Vote logic
+
+voting_view.py  - I created voting.ui using QT Designer
+using command pyuic6 -x voting.ui -o voting_view.py
+
+controller.py   - Connects GUI and model
+
+main.py         - to run the application
+
+votes.csv       - I am storing the data in this file
+after voting button is pushed
